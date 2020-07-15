@@ -40,6 +40,13 @@ of the Python project root folder:
 export XDG_CONFIG_HOME=$HOME/Documents/sources/vimrcs/asciidoc
 ```
 
+## Default Folder Setup
+
+Put init.vim with enhanced editor level into the default config folder
+~/.config/nvim.
+
+Hence it will be OK when editing files without specify XDG_CONFIG_HOME.
+
 ## Problems
 
 XDG_CONFIG_HOME is not used only by vim.
@@ -56,17 +63,10 @@ For direnv hasn't support alias yet,
 you can use [desk](https://github.com/jamesob/desk) to define a deskfile,
 with the alias definition in it.
 
-## Other Options
+## Other Potential Solutions
 
-Another environment variable MYVIMRC can also be used to load configs:
-```
-MYVIMRC=$HOME/Documents/sources/vimrcs/nim.vim nvim dsnote.nim
-```
-
-But the environment created via this method is not pure enough.
-It could be *polluted* by default configs in ~/.config/nvim.
-Hence the configs in MYVIMRC can't be loaded properly.
-So I choose XDG_CONFIG_HOME finally,
+The vim internal variable MYVIMRC can be used to load configs *after* vim startup.
+So it's unsuitable for this work-flow,
 even in MYVIMRC style the config directory structure will be far more concise:
 ```
 vimrcs
