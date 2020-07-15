@@ -9,7 +9,7 @@ this method has no external dependencies.
 After configurations changed, they take effects at once without regenerating init.vim,
 which makes experiments more convenient.
 
-## Udage
+## Usage
 
 Configurations for different scenarios are put into different folders.
 If using neovim as a bare editor without any plugins, start nvim with:
@@ -42,7 +42,7 @@ export XDG_CONFIG_HOME=$HOME/Documents/sources/vimrcs/asciidoc
 
 ## Problems
 
-XDG_CONFIG_HOME is not used only by neovim.
+XDG_CONFIG_HOME is not used only by vim.
 If other applications also it, they won't find the config files.
 
 In this case, you have to remove the definition of XDG_CONFIG_HOME
