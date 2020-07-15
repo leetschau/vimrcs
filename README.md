@@ -43,11 +43,11 @@ export XDG_CONFIG_HOME=$HOME/Documents/sources/vimrcs/asciidoc
 ## Problems
 
 XDG_CONFIG_HOME is not used only by vim.
-If other applications also it, they won't find the config files.
+If it's used by other applications in the same project,
+they won't find their config files.
 
 In this case, you have to remove the definition of XDG_CONFIG_HOME
-from .envrc.
-And use alias instead:
+from .envrc. And use alias instead:
 ```
 alias vi="XDG_CONFIG_HOME=$REPO_ROOT/asciidoc nvim"
 ```
