@@ -84,4 +84,4 @@ VAMActivate github:ervandew/supertab
   \ github:kien/rainbow_parentheses.vim
   \ github:vim-airline/vim-airline
   \ github:geoffharcourt/vim-matchit
-
+  \ github:mileszs/ack.vim
