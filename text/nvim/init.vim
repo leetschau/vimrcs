@@ -34,6 +34,7 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 " ctrlp
 let g:ctrlp_custom_ignore = { 'dir': 'node_modules\|.git' }
 nnoremap <C-n> :CtrlPBuffer<CR>
+nnoremap <C-m> :CtrlPMRU<CR>
 
 " undo & undotree configs
 set undodir=$HOME/.local/undo/ "make sure this folder exists
@@ -73,11 +74,14 @@ let g:rainbow_conf = {
 \ }
 \}
 
+" easymotion
+let g:EasyMotion_smartcase = 1
+nmap f <Plug>(easymotion-overwin-f2)
+
 VAMActivate github:ervandew/supertab
   \ github:scrooloose/nerdtree
   \ github:kien/ctrlp.vim
   \ github:mbbill/undotree
-  \ github:fholgado/minibufexpl.vim
   \ github:szw/vim-maximizer
   \ github:scrooloose/nerdcommenter
   \ github:rlue/vim-barbaric
@@ -85,3 +89,4 @@ VAMActivate github:ervandew/supertab
   \ github:vim-airline/vim-airline
   \ github:geoffharcourt/vim-matchit
   \ github:mileszs/ack.vim
+  \ github:easymotion/vim-easymotion
