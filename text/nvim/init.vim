@@ -78,6 +78,13 @@ let g:rainbow_conf = {
 let g:EasyMotion_smartcase = 1
 nmap f <Plug>(easymotion-overwin-f2)
 
+" Voom outline
+let g:voom_tree_placement = "right"
+let g:voom_python_versions = [3]
+let g:voom_tree_width = 40
+autocmd FileType asciidoc nnoremap <leader>o :VoomToggle asciidoc<CR>
+autocmd FileType markdown nnoremap <leader>o :VoomToggle markdown<CR>
+
 VAMActivate github:ervandew/supertab
   \ github:scrooloose/nerdtree
   \ github:kien/ctrlp.vim
@@ -90,3 +97,4 @@ VAMActivate github:ervandew/supertab
   \ github:geoffharcourt/vim-matchit
   \ github:mileszs/ack.vim
   \ github:easymotion/vim-easymotion
+  \ github:vim-voom/VOom
