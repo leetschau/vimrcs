@@ -9,8 +9,7 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
-VAMActivate github:plasticboy/vim-markdown
-  \ github:w0rp/ale
+VAMActivate github:w0rp/ale
   \ github:tpope/vim-fugitive
   \ github:vim-syntastic/syntastic
   \ github:benmills/vimux

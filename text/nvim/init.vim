@@ -34,7 +34,7 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 " ctrlp
 let g:ctrlp_custom_ignore = { 'dir': 'node_modules\|.git' }
 nnoremap <C-n> :CtrlPBuffer<CR>
-nnoremap <C-m> :CtrlPMRU<CR>
+nnoremap <C-u> :CtrlPMRU<CR>
 
 " undo & undotree configs
 set undodir=$HOME/.local/undo/ "make sure this folder exists
@@ -85,6 +85,12 @@ let g:voom_tree_width = 40
 autocmd FileType asciidoc nnoremap <leader>o :VoomToggle asciidoc<CR>
 autocmd FileType markdown nnoremap <leader>o :VoomToggle markdown<CR>
 
+" colorscheme: onedark
+let g:airline_theme='onedark'
+let g:onedark_color_overrides = {
+\  "black": {"gui": "#000000", "cterm": "0", "cterm16": "0" }
+\}
+
 VAMActivate github:ervandew/supertab
   \ github:scrooloose/nerdtree
   \ github:kien/ctrlp.vim
@@ -97,4 +103,9 @@ VAMActivate github:ervandew/supertab
   \ github:geoffharcourt/vim-matchit
   \ github:mileszs/ack.vim
   \ github:easymotion/vim-easymotion
+  \ github:plasticboy/vim-markdown
   \ github:vim-voom/VOom
+  \ github:kshenoy/vim-signature
+  \ github:joshdick/onedark.vim
+
+colorscheme onedark
