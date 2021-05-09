@@ -83,7 +83,7 @@ let g:voom_tree_placement = "right"
 let g:voom_python_versions = [3]
 let g:voom_tree_width = 40
 autocmd FileType asciidoc nnoremap <leader>o :VoomToggle asciidoc<CR>
-autocmd FileType markdown nnoremap <leader>o :VoomToggle markdown<CR>
+autocmd FileType markdown nnoremap <leader>o :VoomToggle pandoc<CR>
 
 " colorscheme: onedark
 let g:airline_theme='onedark'
