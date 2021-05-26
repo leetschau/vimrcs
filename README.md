@@ -40,6 +40,13 @@ of the Python project root folder:
 export XDG_CONFIG_HOME=$HOME/Documents/sources/vimrcs/asciidoc
 ```
 
+## Language Specific Setup
+
+### SQL
+
+The auto-formatting for SQL script depends on `sqlformat`,
+Install it with `pip`.
+
 ## Default Folder Setup
 
 Put init.vim with enhanced editor level into the default config folder
