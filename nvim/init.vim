@@ -15,6 +15,8 @@ set sw=2
 set ts=2
 set nowrap
 set number
+set omnifunc=syntaxcomplete#Complete
+set completeopt=longest,menuone,noselect
 
 nnoremap ; :
 nnoremap : ;
@@ -33,4 +35,5 @@ highlight OverLength ctermfg=cyan guibg=#592929
 match OverLength /\%81v.\+/
 
 cabbrev ss set spell!<CR>
+
 

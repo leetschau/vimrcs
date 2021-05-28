@@ -45,7 +45,7 @@ export XDG_CONFIG_HOME=$HOME/Documents/sources/vimrcs/asciidoc
 ### SQL
 
 The auto-formatting for SQL script depends on `sqlformat`,
-Install it with `pip`.
+Install it with `apt` or `pip`.
 
 ## Default Folder Setup
 

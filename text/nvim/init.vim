@@ -85,6 +85,8 @@ let g:voom_tree_width = 40
 autocmd FileType asciidoc nnoremap <leader>o :VoomToggle asciidoc<CR>
 autocmd FileType markdown nnoremap <leader>o :VoomToggle pandoc<CR>
 
+autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
+
 " colorscheme: onedark
 let g:airline_theme='onedark'
 let g:onedark_color_overrides = {
