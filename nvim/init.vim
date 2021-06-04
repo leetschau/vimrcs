@@ -17,6 +17,7 @@ set nowrap
 set number
 set omnifunc=syntaxcomplete#Complete
 set completeopt=longest,menuone,noselect
+set paste
 
 nnoremap ; :
 nnoremap : ;
