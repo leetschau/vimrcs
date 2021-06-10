@@ -14,3 +14,4 @@ endfunction
 autocmd FileType python vnoremap <Space> "vy :call Vimux4IPython()<CR>
 
 VAMActivate github:python-mode/python-mode
+  \ github:metakirby5/codi.vim
