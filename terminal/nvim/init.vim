@@ -14,11 +14,6 @@ set nonumber
 set laststatus=0
 colo desert
 
-nnoremap ; :
-nnoremap : ;
-vnoremap ; :
-vnoremap : ;
-
 tnoremap <C-s> <C-\><C-n>
 tnoremap <C-q> <C-\><C-n>:q<CR>
 

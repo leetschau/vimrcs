@@ -2,7 +2,7 @@ runtime ../../langbase/nvim/init.vim
 
 let g:formatdef_sql = '"sqlformat --keywords upper --identifiers lower -"'
 let g:formatters_sql = ['sql']
-noremap <leader>fmt :Autoformat<CR>
+noremap <leader>f :Autoformat<CR>
 
 autocmd BufNewFile,BufRead *.hql set filetype=sql
 
