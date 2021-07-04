@@ -47,6 +47,12 @@ export XDG_CONFIG_HOME=$HOME/Documents/sources/vimrcs/asciidoc
 The auto-formatting for SQL script depends on `sqlformat`,
 Install it with `apt` or `pip`.
 
+### F#
+
+According to installation instructions in [fsharp/vim-fsharp](https://github.com/fsharp/vim-fsharp),
+you need to run `make fsautocomplete` in the plugin folder,
+and make sure file ftplugin/bin/fsautocomplete.exe exists.
+
 ## Default Folder Setup
 
 Put init.vim with enhanced editor level into the default config folder
