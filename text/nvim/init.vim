@@ -87,12 +87,6 @@ autocmd FileType markdown nnoremap <leader>o :VoomToggle pandoc<CR>
 
 autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
 
-" colorscheme: onedark
-let g:airline_theme='onedark'
-let g:onedark_color_overrides = {
-\  "black": {"gui": "#000000", "cterm": "0", "cterm16": "0" }
-\}
-
 VAMActivate github:ervandew/supertab
   \ github:scrooloose/nerdtree
   \ github:kien/ctrlp.vim
@@ -108,6 +102,3 @@ VAMActivate github:ervandew/supertab
   \ github:plasticboy/vim-markdown
   \ github:vim-voom/VOom
   \ github:kshenoy/vim-signature
-  \ github:joshdick/onedark.vim
-
-colorscheme onedark
