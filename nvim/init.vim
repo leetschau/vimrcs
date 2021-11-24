@@ -1,6 +1,7 @@
 filetype indent plugin on
 syntax on
-colo ron
+set spelllang=en,cjk
+colo slate
 
 set clipboard+=unnamedplus
 let mapleader=","
